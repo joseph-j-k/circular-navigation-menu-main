@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>Circular Navigation Menu</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="toggle-menu" onclick="toggleMenu()"><i class='bx bx-plus' ></i></div>
+		<ul class="menu">
+			<li style="--i: 1;">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+				</a>
+			</li>
+			<li style="--i: 2;">
+				<a href="#">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+				</a>
+			</li>
+			<li style="--i: 3;">
+				<a href="#">
+					<i class='bx bxs-user-circle' ></i>
+				</a>
+			</li>
+			<li style="--i: 4;">
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+				</a>
+			</li>
+			<li style="--i: 5;">
+				<a href="#">
+					<i class='bx bxs-message-dots' ></i>
+				</a>
+			</li>
+			<li style="--i: 6;">
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<script>
+		function toggleMenu() {
+			document.querySelector('.container').classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
